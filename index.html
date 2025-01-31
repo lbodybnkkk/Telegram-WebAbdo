@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دعم واتساب</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>دعم واتساب</h1>
+    </header>
+
+    <section class="info">
+      <h2>طلب توثيق رقمك على واتساب</h2>
+      <p>ما هي العلامة الخضراء في واتساب؟ هي شارة تحقق تضمن أن الحساب هو حساب رسمي ومعتمد من واتساب.</p>
+    </section>
+
+    <section class="phone">
+      <label for="phone">رقم الهاتف:</label>
+      <input type="text" id="phone" placeholder="أدخل رقم الهاتف">
+      <button onclick="validatePhoneNumber()">طلب الكود</button>
+      <p id="error-message" style="color:red;"></p>
+    </section>
+
+    <section class="code">
+      <label for="code">أدخل الكود:</label>
+      <input type="text" id="code" placeholder="أدخل الكود">
+      <button onclick="sendVerificationCode()">تأكيد الكود</button>
+    </section>
+
+    <section class="footer">
+      <p>جميع الحقوق محفوظة لدى شركة واتساب © 2025</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
